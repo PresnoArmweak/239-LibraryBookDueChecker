@@ -1,3 +1,5 @@
+<!-- made by Preston Armstrong -->
+
 <?php
 
     $Books = [
@@ -36,7 +38,7 @@
     ];
 
 
-    if ($_GET) {
+    if ($_GET) {//pulls data from the form and adds it to the array
         $name = trim($_GET['name'] ?? '');
         $author = trim($_GET['author'] ?? '');
         $year = intval($_GET['year'] ?? 0);
@@ -47,7 +49,7 @@
         returnABook($name, $author, $year, $genre, $stock, $return_date, $due_date);
     }
 
-    function checkStock($bookTitle){
+    function checkStock($bookTitle){//checks if the book is in stock
         global $Books;
         if (isset($Books[$bookTitle])) {
             return $Books[$bookTitle]['stock'] > 0 ? 'In Stock' : 'Out of Stock';
@@ -56,7 +58,7 @@
         }
     }
 
-    function returnABook($name, $author, $year, $genre, $stock, $return_date, $due_date) {
+    function returnABook($name, $author, $year, $genre, $stock, $return_date, $due_date) {//formats a book to be added to the array
         global $Books;
         if (isset($Books[$name])) {
             $Books[$name]['stock'] += $stock;

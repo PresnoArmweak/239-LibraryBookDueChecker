@@ -1,3 +1,5 @@
+<!-- made by Preston Armstrong -->
+
 <?php
 include_once 'functions.php';
 ?>
