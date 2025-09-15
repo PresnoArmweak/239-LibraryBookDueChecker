@@ -17,7 +17,7 @@ Checks the book's return date againts the due date
 [239-LibraryBookDueChecker](https://github.com/PresnoArmweak/239-LibraryBookDueChecker) 
  
 ## Screenshot of homepage 
-![alt](url) 
+![alt](exampleScreenShot.png) 
  
 ## Markdown Cheat Sheet 
 [cheatsheet](https://www.markdownguide.org/cheat-sheet/) ) 
